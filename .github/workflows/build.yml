@@ -32,7 +32,7 @@ jobs:
           biber \
           fonts-dejavu-core \
           lmodern \
-          ttf-mscorefonts-installer
+          fonts-freefont-ttf
 
     - name: Build PDF
       run: |
