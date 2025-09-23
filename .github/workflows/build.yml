@@ -34,7 +34,7 @@ jobs:
           lmodern \
           ttf-mscorefonts-installer \
           fontconfig
-        fc-cache -f -v
+        sudo fc-cache -f -v
 
     - name: Build PDF
       run: |
