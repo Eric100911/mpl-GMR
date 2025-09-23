@@ -18,7 +18,22 @@ jobs:
     - name: Install TeX Live
       run: |
         sudo apt-get update
-        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-bibtex-extra texlive-lang-chinese texlive-xetex biber
+        sudo apt-get install -y \
+          texlive-latex-base \
+          texlive-latex-extra \
+          texlive-fonts-recommended \
+          texlive-fonts-extra \
+          texlive-lang-chinese \
+          texlive-xetex \
+          texlive-science \
+          texlive-pictures \
+          texlive-bibtex-extra \
+          texlive-math-extra \
+          texlive-luatex \
+          biber \
+          fonts-liberation \
+          fonts-dejavu-core \
+          lmodern
 
     - name: Build PDF
       run: |
