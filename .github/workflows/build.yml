@@ -18,7 +18,7 @@ jobs:
     - name: Install TeX Live
       run: |
         sudo apt-get update
-        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-bibtex-extra texlive-science texlive-pictures texlive-xetex biber
+        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-bibtex-extra texlive-lang-chinese texlive-xetex biber
 
     - name: Build PDF
       run: |
@@ -51,7 +51,7 @@ jobs:
     - name: Create Release and Upload Asset
       uses: softprops/action-gh-release@v1
       with:
-        files: ./artifacts/report.pdf
+        files: ./artifacts/Report/report.pdf
         name: Release ${{ github.ref_name }}
         body: |
           Automatic release for tag ${{ github.ref_name }}
