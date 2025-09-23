@@ -28,10 +28,8 @@ jobs:
           texlive-science \
           texlive-pictures \
           texlive-bibtex-extra \
-          texlive-math-extra \
           texlive-luatex \
           biber \
-          fonts-liberation \
           fonts-dejavu-core \
           lmodern
 
