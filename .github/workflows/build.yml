@@ -18,6 +18,8 @@ jobs:
     - name: Install TeX Live
       run: |
         sudo apt-get update
+        sudo apt-get install -y --no-install-recommends apt-utils
+        echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
         sudo apt-get install -y \
           texlive-latex-base \
           texlive-latex-extra \
@@ -35,6 +37,7 @@ jobs:
           ttf-mscorefonts-installer \
           fontconfig
         sudo fc-cache -f -v
+        fc-list | grep "Times New Roman" || true
 
     - name: Build PDF
       run: |
