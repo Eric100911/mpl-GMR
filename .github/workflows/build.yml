@@ -31,7 +31,8 @@ jobs:
           texlive-luatex \
           biber \
           fonts-dejavu-core \
-          lmodern
+          lmodern \
+          ttf-mscorefonts-installer
 
     - name: Build PDF
       run: |
