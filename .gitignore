@@ -1,10 +1,10 @@
 *
-*/*
 !Makefile
 !README.md
-!Report/report.bib
+!Report/
 !Report/report.tex
 !Report/thuemp.cls
+!Report/report.bib
 !Data/GMR-Plot-01-01-excel.png
 !Data/GMR-Plot-01-02-excel.png
 !Data/GMR-Plot-02-excel.png
